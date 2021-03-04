@@ -1,0 +1,9 @@
+instance: 'LGBM'
+parameters:
+  n_estimators: 1200 
+  learning_rate: 0.01 
+  colsample_bytree: 0.7 
+  random_state: 2020 
+  reg_alpha: 0.05 
+  subsample: 0.2 
+  subsample_freq: 1

@@ -1,0 +1,2 @@
+model: model_config/lgbm_1200.yml
+pipeline: pipeline_config/base_pipeline.yml

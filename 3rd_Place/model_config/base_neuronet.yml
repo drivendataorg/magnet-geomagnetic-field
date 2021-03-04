@@ -1,0 +1,6 @@
+instance: simple_deep_net
+parameters:
+  neurons: 50
+  use_batch_norm: True
+  dropout: 0.15
+  n_layers: 2

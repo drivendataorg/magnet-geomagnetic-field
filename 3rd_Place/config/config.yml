@@ -1,0 +1,5 @@
+# main config file.
+directories:
+  raw: ./data/raw/
+  processed: ./data/processed/
+  interim: ./data/interim
