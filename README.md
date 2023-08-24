@@ -16,7 +16,7 @@ The goal of this challenge is to develop models for forecasting Dst that 1) push
 
 ## What's in this Repository
 
-This repository contains code from winning competitors in the [MagNet: Model the Geomagnetic Field](https://www.drivendata.org/competitions/73/noaa-magnetic-forecasting/) DrivenData challenge.
+This repository contains code from winning competitors in the [MagNet: Model the Geomagnetic Field](https://www.drivendata.org/competitions/73/noaa-magnetic-forecasting/) DrivenData challenge. Code for all winning solutions are open source under the MIT License.
 
 **Winning code for other DrivenData competitions is available in the [competition-winners repository](https://github.com/drivendataorg/competition-winners).**
 
@@ -30,3 +30,5 @@ Place | Team or User | Private Score (RMSE) | Public Score (RMSE) | Summary of M
 4     | k_squared: [KarimAmer](https://www.drivendata.org/users/KarimAmer/), [kareem](https://www.drivendata.org/users/kareem/)  | 11.529 | 12.619 | We preprocessed the “solar_wind” data by aggregating hourly features: mean, std, min, max, and median in addition to the first and last-minute features and the difference between them (gradient). We also added the daily ACE satellite positions to our list of features. We utilize the latest 96 hours (4 days) in our model to predict the following 2 hours. Our model is a 4-block deep convolutional neural network. Each block has two consecutive convolution layers residually connected. The output of the convolutions is passed through Leaky ReLU non-linear activation function then maxpooling to reduce the sequence length by a factor of 2. Finally, a fully-connected layer projects the convolutional features to 2 outputs. We utilize a custom loss function which allows us to control over and under shooting of our loss function. We built an ensemble of models using different power parameters P and different seeds and averaged their predictions.
 
 Additional solution details can be found in the `reports` folder inside the directory for each submission.
+
+**[Meet the winners](https://drivendata.co/blog/magnet-geomagnetic-field-winners/)**
